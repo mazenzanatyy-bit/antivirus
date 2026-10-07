@@ -25,3 +25,18 @@ is_malicious() {
 
     return 1
 }
+
+scan_dir() {
+    local dir="$1"
+    local mal_dir="$2"
+
+    for file in "$dir"/*; do
+        [ -f "$file" ] || continue
+
+        if is_malicious "$file"; then
+            echo "$(basename "$file") is malicious and is deleted "
+            cp "$file" "$mal_dir/"
+            rm "$file"
+        fi
+    done
+}
