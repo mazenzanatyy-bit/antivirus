@@ -1,3 +1,4 @@
 testdir/
 quarantine/
 directory-info.*
+cron.log

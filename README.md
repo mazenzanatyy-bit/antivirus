@@ -56,7 +56,7 @@ Step 3. Start the antivirus:
 
     make run
 
-It scans right away. After that it checks the folder every 5 seconds and only scans again if something changed. When it finds a bad file, it prints the file name followed by "is malicious and it is DELETED", copies the file to quarantine, and removes it from testdir. Press Ctrl+C to stop it.
+It scans right away. After that it checks the folder every 5 seconds and only scans again if something changed. When it finds a bad file, it prints the file name followed by "is malicious and is deleted", copies the file to quarantine, and removes it from testdir. Press Ctrl+C to stop it.
 
 Step 4. To look at the quarantined files, run this (not at the same time as the antivirus):
 
